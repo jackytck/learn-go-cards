@@ -10,5 +10,8 @@ func main() {
 	cards.saveToFile("my_cards")
 
 	fromDisk := newDeckFromFile("my_cards")
+	// fromDisk.print()
+
+	fromDisk.shuffle()
 	fromDisk.print()
 }
